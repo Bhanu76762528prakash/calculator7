@@ -1,0 +1,71 @@
+<html>
+<head>
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+  .div1{
+    border: black solid 2px;
+    margin: 10px;
+    padding: 50px;
+    width: 400px;
+    text-align:center;
+    margin-left:35%;
+    margin-top:2%;
+    background-color:white;
+  }
+
+  body{
+    background-color:#FBF8DD;
+  }
+
+  h1{
+    margin-left:35%;
+    margin-top:13%;
+    color:#E84A5F;
+  }
+    </style>
+  <body>
+    <script>
+     function add(){
+     var fir,sec,result;
+     fir=document.getElementById('first').value;
+     sec=document.getElementById('second').value;
+     result=parseInt(fir)+parseInt(sec);
+     alert("Addition of 2 numbers is "+result);
+     }
+
+     function sub(){
+     var fir,sec,result;
+     fir=document.getElementById('first').value;
+     sec=document.getElementById('second').value;
+     result=parseInt(fir)-parseInt(sec);
+     alert("subtraction of 2 numbers : "+result);
+     }
+
+     function mul(){
+     var fir,sec,result;
+     fir=document.getElementById('first').value;
+     sec=document.getElementById('second').value;
+     result=parseInt(fir)*parseInt(sec);
+     alert("Multiplication of 2 numbers : "+result);
+     }
+
+     function div(){
+     var fir,sec,result;
+     fir=document.getElementById('first').value;
+     sec=document.getElementById('second').value;
+     result=parseInt(fir)/parseInt(sec);
+     alert("Division of 2 numbers : "+result);
+     }
+      </script>
+      <h1> SIMPLE CALCULATOR </h1>
+      <div class=div1>
+<input type="number" id="first" placeholder="Enter First value"></input><br><br>
+<input type="number" id="second" placeholder="Enter Second value"></input><br><br>
+<button type="button" class="btn btn-outline-primary" onclick="add()">➕</button>
+<button type="button"  class="btn btn-outline-success" onclick="sub()">➖</button>
+<button type="button" class="btn btn-outline-warning" onclick="mul()">✖</button>
+<button type="button" class="btn btn-outline-info" onclick="div()">➗</button><br><br>
+</div>
+    </body>
+    </html>
